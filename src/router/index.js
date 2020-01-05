@@ -55,7 +55,8 @@ const routes = [
     },{
       path: 'address_edit',
       component: AddressEdit,
-    }]
+    }
+  ]
   },
   {
     path: '/login',

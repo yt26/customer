@@ -34,7 +34,7 @@ export default{
     methods:{
         loadAddress(){
             let id=this.info.id;
-            let url="http://localhost:6677/address/findByCustomerId?id="+id;
+            let url="/address/findByCustomerId?id="+id;
             get(url).then((Response)=>{
                 this.addresses=response.data;
             })
