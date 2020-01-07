@@ -50,16 +50,15 @@ const routes = [
       path: 'user',
       component: User,
     },{
-      path: 'address',
-      component: AddressList,
+        path: 'address',
+        component: AddressList,
     },{
-      path: 'address_edit',
-      component: AddressEdit,
-    }
-  ]
+        path: 'address_edit',
+        component: AddressEdit,
+    }]
   },
   {
-    path: '/login',
+    path: '/Login',
     name: 'login',
     component: Login
   }

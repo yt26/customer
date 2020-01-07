@@ -11,14 +11,36 @@
       <van-tab title="已完成">
       </van-tab>
     </van-tabs>
+    <div>
+      <ul>
+        <li ></li>
+      </ul>
+    </div>
   </div>
 </template>
 <script>
-import { mapActions, mapState ,mapGetters} from 'vuex'
+import { mapState } from 'vuex'
+import {get} from '../../http/axios'
 export default {
   data(){
     return {
-      active:0
+      active:0,
+      orders:[]
+    }
+  },
+  computed:{
+    ...mapState("user",["info"])
+  },
+  created(){
+    this.loadOrders();
+  },
+  methods:{
+    //加载我的订单
+    loadOrders(){
+      let url="order/query?customerId="+this.info.id;
+      get(url).then((response)=>{
+        this.orders=response.data;
+      })
     }
   }
 }

@@ -7,7 +7,7 @@
       <div class="name">{{info.name}}</div>
     </div>
     <van-cell title="常用地址" is-link to="/manager/address" />
-    <van-cell title="所有订单" is-link to="/manager/order" />
+    <van-cell title="所有订单" is-link to="/manager/Order" />
     <div class="btn" @click="logoutHandler">
       退出
     </div>
@@ -24,7 +24,7 @@ export default {
     logoutHandler(){
       this.logout()
       .then(()=>{
-        this.$router.push({path:'/login'})
+        this.$router.push({path:'/Login'})
       })
     }
   },
