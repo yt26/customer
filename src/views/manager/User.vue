@@ -41,7 +41,6 @@ export default {
   background: #1659a0;
   margin-bottom: 2em;
 }
-
 .header .photo {
   margin: 0 auto;
   width: 10em;
@@ -56,20 +55,17 @@ export default {
   line-height: 3em;
   font-size: 16px;
   color: #ffffff;
-
 }
 .header .photo img {
  width: 100%;
  border-radius: 50%;
 }
-
 .btn {
   width: 90%;
-  margin: 1em auto;
+  margin: 0 auto;
   line-height: 3em;
   text-align: center;
   border: 1px solid #ededed;
   border-radius: 1.5em;
 }
-
-</style>
+</style> 

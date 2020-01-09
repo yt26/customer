@@ -70,3 +70,15 @@ export default {
   }
 }
 </script>
+<style scoped>
+.home {
+  padding-bottom: 50px;
+}
+.header {
+  height: 300px;
+  overflow: hidden;
+}
+.header img {
+  width: 100%;
+}
+</style> 
